@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import BoardHeader from "./"
+import ColumnHead from "./"
 
 const meta = {
-  title: "Components/BoardHeader",
-  component: BoardHeader,
+  title: "Components/ColumnHead",
+  component: ColumnHead,
   args: {
     // logo: <GoFundMe />,
     // navPrimary: navPrimary,
@@ -13,7 +13,7 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <div className="min-w-[1278px]">
+      <div className="min-w-[406px]">
         <Story />
       </div>
     ),
@@ -36,13 +36,13 @@ const meta = {
     //   control: { type: "boolean" },
     // },
   },
-} satisfies Meta<typeof BoardHeader>
+} satisfies Meta<typeof ColumnHead>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   render: (args) => {
-    return <BoardHeader {...args} />
+    return <ColumnHead {...args} />
   },
 }

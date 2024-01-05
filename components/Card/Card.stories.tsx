@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import BoardHeader from "./"
+import Card from "./"
 
 const meta = {
-  title: "Components/BoardHeader",
-  component: BoardHeader,
+  title: "Components/Card",
+  component: Card,
   args: {
     // logo: <GoFundMe />,
     // navPrimary: navPrimary,
@@ -11,13 +11,6 @@ const meta = {
     // logoLeft: false,
     // headerAnimation: false,
   },
-  decorators: [
-    (Story) => (
-      <div className="min-w-[1278px]">
-        <Story />
-      </div>
-    ),
-  ],
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -36,13 +29,13 @@ const meta = {
     //   control: { type: "boolean" },
     // },
   },
-} satisfies Meta<typeof BoardHeader>
+} satisfies Meta<typeof Card>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   render: (args) => {
-    return <BoardHeader {...args} />
+    return <Card {...args} />
   },
 }
