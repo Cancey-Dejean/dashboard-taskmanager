@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const TopBar = ({}: {}) => {
   return (
     <header className="bg-white py-8 px-6 flex items-center gap-5">
@@ -84,22 +86,13 @@ const TopBar = ({}: {}) => {
         </button>
 
         <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            viewBox="0 0 48 48"
-            fill="none"
-          >
-            <circle
-              cx="24"
-              cy="24"
-              r="23"
-              fill="#C4C4C4"
-              stroke="#EAEAEA"
-              stroke-width="2"
-            />
-          </svg>
+          <Image
+            src="https://dummyimage.com/48x48.png/C4C4C4/000000"
+            width={48}
+            height={48}
+            className="rounded-full border-2 border-[#EFEFEF]"
+            alt=""
+          />
         </button>
       </div>
     </header>
