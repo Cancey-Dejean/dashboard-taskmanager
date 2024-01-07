@@ -258,6 +258,31 @@ const LoginIcon = () => {
   )
 }
 
+const PlusIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+    >
+      <path
+        d="M16 6.66666V25.3333"
+        stroke="#202226"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.66663 16H25.3333"
+        stroke="#202226"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  )
+}
+
 export {
   Logo,
   HomeIcon,
@@ -267,4 +292,5 @@ export {
   SettingsIcon,
   InfoIcon,
   LoginIcon,
+  PlusIcon,
 }

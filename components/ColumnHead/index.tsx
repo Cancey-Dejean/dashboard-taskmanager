@@ -47,7 +47,7 @@ const ColumnHead = (props: Props) => {
           <path
             d="M5.5 8.25L11 13.75L16.5 8.25"
             stroke="#6A6A6A"
-            stroke-width="2"
+            strokeWidth="2"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
