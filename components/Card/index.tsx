@@ -3,7 +3,7 @@ import TagItem from "../TagItem"
 
 const Card = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="max-w-[356px] p-6 rounded-[10px] bg-white flex flex-col gap-4">
+    <div className="max-w-[356px] mx-auto w-full p-6 rounded-[10px] bg-white flex flex-col gap-4">
       <div className="flex gap-4 justify-between items-start">
         <div className="text-[#6A6A6A] flex flex-col gap-1">
           <h3 className=" text-[#202226] font-semibold text-xl">
@@ -260,7 +260,7 @@ const Card = ({ children }: { children: React.ReactNode }) => {
               />
             </svg>
 
-            <span className="text-sm">9</span>
+            <span className="text-sm">5</span>
           </div>
         </div>
       </div>

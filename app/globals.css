@@ -67,3 +67,9 @@ nav.breadcrumb [aria-current="page"] {
 select {
   appearance: none;
 }
+
+/* Storybook Styles */
+.css-ya07zw,
+#storybook-root {
+  width: 100% !important;
+}

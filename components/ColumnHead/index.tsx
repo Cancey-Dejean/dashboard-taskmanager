@@ -27,7 +27,7 @@ const ColumnHead = (props: Props) => {
         <select
           id="location"
           name="location"
-          className="relative z-[1] py-1.5 px-3 pr-7 rounded-lg  text-gray-900 dark:text-white border-2 border-gray-300 focus:ring-2 focus:rounded-lg focus:ring-indigo-600 sm:text-sm sm:leading-6 min-w-[110px] text-sm bg-transparent"
+          className="relative z-[1] py-1.5 px-3 pr-7 rounded-lg  text-gray-900 border-2 border-gray-300 focus:ring-2 focus:rounded-lg focus:ring-indigo-600 sm:text-sm sm:leading-6 min-w-[110px] text-sm bg-transparent "
           defaultValue="Date Added"
         >
           <option selected>Date Added</option>

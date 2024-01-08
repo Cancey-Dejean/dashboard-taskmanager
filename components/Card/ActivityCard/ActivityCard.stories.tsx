@@ -5,37 +5,23 @@ const meta = {
   title: "Components/ActivityCard",
   component: ActivityCard,
   args: {
-    // logo: <GoFundMe />,
-    // navPrimary: navPrimary,
-    // navSecondary: navSecondary,
-    // logoLeft: false,
-    // headerAnimation: false,
+    userImg: "https://picsum.photos/200",
+    userName: "John Doe",
+    title: "Your Title Here",
+    text: "Lorem ipsum dolor sit amet Eius nobis dolorum, minima ad quas omnis est alias iure facilis corporis unde ullam commodi numquam cupiditate aliquid accusamus quasi eos nam. Expedita veniam sequi quia esse temporibus excepturi nesciunt, eligendi alias eius minus provident iste sunt harum nemo.",
   },
   decorators: [
     (Story) => (
-      <div className="min-w-[366px]">
+      <div className="max-w-[366px] mx-auto">
         <Story />
       </div>
     ),
   ],
   parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
-  tags: ["autodocs"],
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    // logo: {
-    //   control: false,
-    // },
-    // logoLeft: {
-    //   control: { type: "boolean" },
-    // },
-    // headerAnimation: {
-    //   control: { type: "boolean" },
-    // },
-  },
+  // tags: ["autodocs"],
+  argTypes: {},
 } satisfies Meta<typeof ActivityCard>
 
 export default meta
