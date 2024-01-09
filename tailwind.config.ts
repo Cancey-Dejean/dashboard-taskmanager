@@ -12,6 +12,7 @@ const config: Config = {
         primary: "#5932EA",
         blue: "#38C3FF",
         "blue-2": "#0075FF",
+        "blue-3": "#0053B3",
         red: "#FF4329",
         success: "#3DD598",
         warning: "#FFAE06",

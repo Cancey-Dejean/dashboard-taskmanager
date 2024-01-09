@@ -16,21 +16,21 @@ const TopBar = ({}: {}) => {
 
         <div className="h-6 w-[1px] bg-[#858585]" />
 
-        <button className="p-4">
+        <button className="p-4 focus:ring-2 focus:ring-inset focus:ring-indigo-600">
           <IconSearch />
         </button>
       </div>
 
       <div className="flex items-center gap-[10px]">
-        <button>
+        <button className="focus:ring-2 focus:ring-inset focus:ring-indigo-600">
           <IconBell />
         </button>
 
-        <button>
+        <button className="focus:ring-2 focus:ring-inset focus:ring-indigo-600">
           <ChatIcon activeMessages />
         </button>
 
-        <button>
+        <button className="focus:ring-2 focus:ring-inset focus:ring-indigo-600">
           <Avatar imgSrc="https://dummyimage.com/64x64.png/C4C4C4/000000" />
         </button>
       </div>

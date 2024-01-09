@@ -4,38 +4,19 @@ import SidebarHeader from "./"
 const meta = {
   title: "Components/SidebarHeader",
   component: SidebarHeader,
-  args: {
-    // logo: <GoFundMe />,
-    // navPrimary: navPrimary,
-    // navSecondary: navSecondary,
-    // logoLeft: false,
-    // headerAnimation: false,
-  },
+  args: {},
   decorators: [
     (Story) => (
-      <div className="min-w-[366px]">
+      <div className="max-w-[366px] mx-auto">
         <Story />
       </div>
     ),
   ],
   parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
-  tags: ["autodocs"],
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    // logo: {
-    //   control: false,
-    // },
-    // logoLeft: {
-    //   control: { type: "boolean" },
-    // },
-    // headerAnimation: {
-    //   control: { type: "boolean" },
-    // },
-  },
+  // tags: ["autodocs"],
+  argTypes: {},
 } satisfies Meta<typeof SidebarHeader>
 
 export default meta
