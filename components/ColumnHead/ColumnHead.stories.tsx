@@ -4,38 +4,19 @@ import ColumnHead from "./"
 const meta = {
   title: "Components/ColumnHead",
   component: ColumnHead,
-  args: {
-    // logo: <GoFundMe />,
-    // navPrimary: navPrimary,
-    // navSecondary: navSecondary,
-    // logoLeft: false,
-    // headerAnimation: false,
-  },
+  args: {},
   decorators: [
     (Story) => (
-      <div className="min-w-[406px]">
+      <div className="max-w-[406px] mx-auto">
         <Story />
       </div>
     ),
   ],
   parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
-  tags: ["autodocs"],
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    // logo: {
-    //   control: false,
-    // },
-    // logoLeft: {
-    //   control: { type: "boolean" },
-    // },
-    // headerAnimation: {
-    //   control: { type: "boolean" },
-    // },
-  },
+  // tags: ["autodocs"],
+  argTypes: {},
 } satisfies Meta<typeof ColumnHead>
 
 export default meta

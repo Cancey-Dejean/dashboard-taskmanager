@@ -1,5 +1,7 @@
 "use client"
+import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { twMerge } from "tailwind-merge"
 import {
   HomeIcon,
   InfoIcon,
@@ -10,8 +12,6 @@ import {
   TrendingDown,
   UsersIcon,
 } from "../Icons"
-import Link from "next/link"
-import { twMerge } from "tailwind-merge"
 
 const NAV_ITEMS = [
   {

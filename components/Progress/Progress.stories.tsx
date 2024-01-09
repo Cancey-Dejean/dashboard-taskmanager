@@ -1,22 +1,29 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import Card from "./"
+import Progress from "./"
 
 const meta = {
-  title: "Components/Card",
-  component: Card,
+  title: "Components/Progress",
+  component: Progress,
   args: {},
+  decorators: [
+    (Story) => (
+      <div className="max-w-[356px] mx-auto">
+        <Story />
+      </div>
+    ),
+  ],
   parameters: {
     layout: "centered",
   },
   // tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof Card>
+} satisfies Meta<typeof Progress>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   render: (args) => {
-    return <Card {...args} />
+    return <Progress {...args} />
   },
 }

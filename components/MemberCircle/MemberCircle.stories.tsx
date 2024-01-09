@@ -9,7 +9,7 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
+  // tags: ["autodocs"],
   argTypes: {},
 } satisfies Meta<typeof MemberCircle>
 
@@ -25,7 +25,7 @@ export const Default: Story = {
 export const AddUser: Story = {
   render: (args) => {
     return (
-      <div className="flex gap-5">
+      <div className="flex gap-5 justify-center">
         <MemberCircle {...args} />
         <button
           className="h-[66px] w-[66px] flex items-center justify-center border border-black rounded-full"

@@ -1,4 +1,5 @@
 import React from "react"
+import { ArrowDown } from "../Icons"
 
 type Props = {}
 
@@ -36,22 +37,9 @@ const ColumnHead = (props: Props) => {
           <option>Mexico</option>
         </select>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="22"
-          height="22"
-          viewBox="0 0 22 22"
-          fill="none"
-          className="absolute right-2 top-1/2 -translate-y-1/2"
-        >
-          <path
-            d="M5.5 8.25L11 13.75L16.5 8.25"
-            stroke="#6A6A6A"
-            strokeWidth="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+        <div className="absolute right-2 top-1/2 -translate-y-1/2">
+          <ArrowDown />
+        </div>
       </div>
     </div>
   )
