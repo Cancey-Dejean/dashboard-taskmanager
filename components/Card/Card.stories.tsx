@@ -4,7 +4,25 @@ import Card from "./"
 const meta = {
   title: "Components/Card",
   component: Card,
-  args: {},
+  args: {
+    title: "Mobile App Development",
+    assignee: true,
+    dateRange: true,
+    tags: true,
+    previewImage: true,
+    progress: true,
+    userRow: true,
+    watchers: true,
+    messages: true,
+    subtasks: true,
+  },
+  decorators: [
+    (Story) => (
+      <div className="max-w-[406px] w-full mx-auto">
+        <Story />
+      </div>
+    ),
+  ],
   parameters: {
     layout: "centered",
   },

@@ -8,9 +8,9 @@ const ActivityCard = ({
   title,
   text,
 }: {
-  userImg: string
-  userName: string
-  title: string
+  userImg?: string
+  userName?: string
+  title?: string
   text?: string
 }) => {
   const [showMore, setShowMore] = useState(false)

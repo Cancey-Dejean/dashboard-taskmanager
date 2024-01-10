@@ -4,10 +4,13 @@ import ColumnHead from "./"
 const meta = {
   title: "Components/ColumnHead",
   component: ColumnHead,
-  args: {},
+  args: {
+    variant: "todo",
+    title: "Title",
+  },
   decorators: [
     (Story) => (
-      <div className="max-w-[406px] mx-auto">
+      <div className="max-w-[406px] w-full mx-auto">
         <Story />
       </div>
     ),
@@ -16,7 +19,13 @@ const meta = {
     layout: "centered",
   },
   // tags: ["autodocs"],
-  argTypes: {},
+  argTypes: {
+    variant: {
+      control: {
+        type: "select",
+      },
+    },
+  },
 } satisfies Meta<typeof ColumnHead>
 
 export default meta

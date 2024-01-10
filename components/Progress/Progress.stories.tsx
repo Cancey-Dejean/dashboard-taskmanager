@@ -4,7 +4,11 @@ import Progress from "./"
 const meta = {
   title: "Components/Progress",
   component: Progress,
-  args: {},
+  args: {
+    timeLeft: 3,
+    percentage: 35,
+    className: "",
+  },
   decorators: [
     (Story) => (
       <div className="max-w-[356px] mx-auto">

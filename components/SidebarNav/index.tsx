@@ -54,7 +54,7 @@ const NAV_ITEMS = [
 const SidebarNav = ({}: {}) => {
   const path = usePathname()
   return (
-    <div className="sticky top-0 w-[146px] h-screen border-r border-r-[#EFEFEF]">
+    <div className="fixed top-0 left-0 w-[146px] h-full border-r border-r-[#EFEFEF]">
       <div className="flex h-full flex-col gap-y-10 py-8 overflow-y-auto bg-white pb-4 items-center">
         <div className="flex">
           <Logo />

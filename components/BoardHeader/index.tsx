@@ -10,12 +10,7 @@ const BoardHeader = ({
   className?: string
 }) => {
   return (
-    <div
-      className={twMerge(
-        "flex justify-between gap-4 max-w-[1278px] w-full",
-        className
-      )}
-    >
+    <div className={twMerge("flex justify-between gap-4", className)}>
       <div className="flex flex-col gap-1">
         <h1 className="text-2xl font-bold uppercase text-[#202226]">
           {boardTitle || "Board Title"}

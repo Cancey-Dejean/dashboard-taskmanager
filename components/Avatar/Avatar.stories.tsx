@@ -4,7 +4,7 @@ import Avatar from "./"
 const meta = {
   title: "Components/Avatar",
   component: Avatar,
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
+
   // tags: ["autodocs"],
   decorators: [
     (Story) => (
@@ -16,10 +16,16 @@ const meta = {
   args: {
     imgSrc: "https://dummyimage.com/64x64.png/C4C4C4/000000",
     name: "Name",
+    size: "medium",
   },
-  argTypes: {},
+  argTypes: {
+    size: {
+      control: {
+        type: "select",
+      },
+    },
+  },
   parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
   },
 } satisfies Meta<typeof Avatar>
