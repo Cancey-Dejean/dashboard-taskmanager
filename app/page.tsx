@@ -76,40 +76,52 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex-1 flex flex-col gap-5">
-          <ColumnHead title="DONE" variant="done" />
+        <div className="flex-1 flex flex-col">
+          <div className="flex-1 flex flex-col gap-5 ">
+            <ColumnHead title="DONE" variant="done" />
 
-          <Card
-            title="Mobile App Development"
-            assignee
-            tags
-            userRow
-            watchers
-            messages
-            subtasks
-            progress
-          />
-          <Card
-            title="Mobile App Development"
-            assignee
-            tags
-            userRow
-            previewImage
-            progress
-            watchers
-            messages
-            subtasks
-          />
-          <Card
-            title="Mobile App Development"
-            assignee
-            tags
-            userRow
-            watchers
-            messages
-            subtasks
-            progress
-          />
+            <Card
+              title="Mobile App Development"
+              assignee
+              tags
+              userRow
+              watchers
+              messages
+              subtasks
+              progress
+            />
+            <Card
+              title="Mobile App Development"
+              assignee
+              tags
+              userRow
+              previewImage
+              progress
+              watchers
+              messages
+              subtasks
+            />
+            <Card
+              title="Mobile App Development"
+              assignee
+              tags
+              userRow
+              watchers
+              messages
+              subtasks
+              progress
+            />
+            <Card
+              title="Mobile App Development"
+              assignee
+              tags
+              userRow
+              watchers
+              messages
+              subtasks
+              progress
+            />
+          </div>
         </div>
       </div>
     </div>

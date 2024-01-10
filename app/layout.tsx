@@ -37,7 +37,7 @@ export default function RootLayout({
               <div className="bg-transparent h-full ">{children}</div>
             </div>
 
-            <div className="bg-white max-w-[416px] w-full h-fit rounded-[10px] py-5 px-6">
+            <div className="bg-white max-w-[416px] w-full h-full rounded-[10px] py-5 px-6">
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-4">
                   <SidebarHeader title="Teams" />
@@ -68,6 +68,8 @@ export default function RootLayout({
                       userName="James Throne"
                       text="Lorem ipsum dolor sit amet consectetur. Arcu tempor facilisis enim cursus cras at pulvinar quam aliquam. Eget egestas sit Eget egestas sit."
                     />
+                    <ActivityCard text="Lorem ipsum dolor sit amet consectetur. Arcu tempor facilisis enim cursus cras at pulvinar quam aliquam. Eget egestas sit Eget egestas sit." />
+
                     <ActivityCard text="Lorem ipsum dolor sit amet consectetur. Arcu tempor facilisis enim cursus cras at pulvinar quam aliquam. Eget egestas sit Eget egestas sit." />
                   </div>
                 </div>
