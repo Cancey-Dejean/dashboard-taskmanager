@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { ChatIcon, IconBell, IconSearch } from "../Icons"
 import Avatar from "../Avatar"
 

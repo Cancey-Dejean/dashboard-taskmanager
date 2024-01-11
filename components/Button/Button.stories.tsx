@@ -4,7 +4,9 @@ import Button from "./"
 const meta = {
   title: "Components/Button",
   component: Button,
-  args: {},
+  args: {
+    label: "Button",
+  },
   decorators: [
     (Story) => (
       <div className="flex justify-center">

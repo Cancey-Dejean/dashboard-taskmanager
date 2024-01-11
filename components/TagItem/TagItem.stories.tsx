@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import SidebarHeader from "./"
+import TagItem from "./"
 
 const meta = {
-  title: "Components/SidebarHeader",
-  component: SidebarHeader,
+  title: "Components/TagItem",
+  component: TagItem,
   args: {
-    title: "Teams",
-    linkText: "View All",
+    variant: "primary",
+    label: "Tag",
   },
   decorators: [
     (Story) => (
-      <div className="max-w-[366px] mx-auto">
+      <div className="flex justify-center">
         <Story />
       </div>
     ),
@@ -20,13 +20,13 @@ const meta = {
   },
   // tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof SidebarHeader>
+} satisfies Meta<typeof TagItem>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   render: (args) => {
-    return <SidebarHeader {...args} />
+    return <TagItem {...args} />
   },
 }

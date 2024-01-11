@@ -65,7 +65,10 @@ const Icons = () => {
   return (
     <div className="flex items-center justify-center text-center gap-6 flex-wrap">
       {icons.map((icon) => (
-        <div className="[&_div]:border [&_div]:border-gray-400 [&_div]:h-12 [&_div]:w-12 [&_div]:items-center [&_div]:justify-center [&_div]:flex  flex flex-col items-center text-center gap-2">
+        <div
+          className="[&_div]:border [&_div]:border-gray-400 [&_div]:h-12 [&_div]:w-12 [&_div]:items-center [&_div]:justify-center [&_div]:flex  flex flex-col items-center text-center gap-2"
+          key={icon.name}
+        >
           <div key={icon.name}>{icon.icon}</div>
           <p className="text-xs">{icon.name}</p>
         </div>

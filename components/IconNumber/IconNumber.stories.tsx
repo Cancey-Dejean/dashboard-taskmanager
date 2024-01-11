@@ -5,7 +5,10 @@ import { IconEye } from "../Icons"
 const meta = {
   title: "Components/IconNumber",
   component: IconNumber,
-  args: {},
+  args: {
+    number: 22,
+    icon: <IconEye />,
+  },
 
   parameters: {
     layout: "centered",
