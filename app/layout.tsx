@@ -7,6 +7,7 @@ import SidebarHeader from "@/components/SidebarHeader"
 import MemberCircle from "@/components/MemberCircle"
 import { PlusIcon } from "@/components/Icons"
 import ActivityCard from "@/components/Card/ActivityCard"
+import { IoIosDesktop } from "react-icons/io"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,8 +27,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <div className="bg-black fixed inset-0 z-[100] text-white overflow-hidden h-screen w-screen flex md:hidden items-center px-5 justify-center flex-col gap-5 text-center">
+          <IoIosDesktop className="text-[100px] text-red" />
+
+          <p>Desktop Only: Please view application on desktop screens only</p>
+        </div>
         {/* Sidebar */}
-        <SidebarNav />
+        <div className="hidden md:block">
+          <SidebarNav />
+        </div>
 
         <main>
           <TopBar />

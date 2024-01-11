@@ -11,11 +11,11 @@
 }
 
 body {
-  @apply flex h-screen overflow-hidden bg-[whitesmoke];
+  @apply flex h-screen overflow-hidden bg-[whitesmoke] overflow-y-auto;
 }
 
 main {
-  @apply flex-1 pl-[145px] h-fit;
+  @apply flex-1 pl-[145px] h-fit hidden md:block;
 }
 
 a {

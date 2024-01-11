@@ -4,7 +4,7 @@ import Avatar from "../Avatar"
 
 const TopBar = ({}: {}) => {
   return (
-    <header className="bg-white py-8 px-6 flex items-center gap-5">
+    <header className="bg-white py-8 px-6 flex items-center gap-5 sticky top-0 z-20">
       <div className="border rounded-md border-gray-300 overflow-hidden flex bg-[#F3F3F3] items-center flex-1">
         <input
           type="email"

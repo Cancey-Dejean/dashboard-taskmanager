@@ -76,7 +76,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex flex-col h-full">
           <div className="flex-1 flex flex-col gap-5 ">
             <ColumnHead title="DONE" variant="done" />
 
