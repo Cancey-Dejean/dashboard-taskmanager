@@ -4,7 +4,6 @@ import Avatar from "./"
 const meta = {
   title: "Components/Avatar",
   component: Avatar,
-
   // tags: ["autodocs"],
   decorators: [
     (Story) => (
@@ -16,7 +15,6 @@ const meta = {
   args: {
     imgSrc: "https://dummyimage.com/64x64.png/C4C4C4/000000",
     name: "Name",
-    size: "medium",
   },
   argTypes: {
     size: {
